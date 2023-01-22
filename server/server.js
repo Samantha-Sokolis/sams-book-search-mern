@@ -1,14 +1,15 @@
 const express = require('express');
+// Import the ApolloServer class
+const { ApolloServer } = require('apollo-server-express');
+// Import Middleware
+const { authMiddleware } = require("./utils/auth");
+
 const path = require('path');
 const db = require('./config/connection');
 // const routes = require('./routes');
 
-// Import the ApolloServer class
-const { ApolloServer } = require('apollo-server-express');
 // Import part of a GraphQL schema
 const { typeDefs, resolvers } = require('./schemas');
-// Import Middleware
-const { authMiddleware } = require("./utils/auth");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
