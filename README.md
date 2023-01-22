@@ -24,4 +24,4 @@ npm run build
 
 Git Hub: https://github.com/Samantha-Sokolis/sams-book-search-mern
 
-Heroku Deployed application:
+Heroku Deployed application: https://book-search-sams-1.herokuapp.com/
